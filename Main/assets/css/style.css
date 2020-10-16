@@ -103,6 +103,6 @@ header a {
     padding: .2rem .625rem;
 }
 
-/*.hoverLinks:hover {
+header a:hover {
     color: var(--gandalf);
-}*/
+}
