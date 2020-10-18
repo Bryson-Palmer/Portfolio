@@ -118,10 +118,10 @@ header a:hover {
     background-image: url("/Images/Glacier-National-Park.png");
     background-size: cover;
     background-position: center;
-    border-bottom: .4rem solid var(--isengard);
+    border-bottom: .2rem solid var(--isengard);
 }
 
-.hero .backgroundColor {
+.backgroundColor {
     position: absolute;
     width: 100%;
     height: 28rem;
@@ -130,7 +130,7 @@ header a:hover {
     z-index: 0;
 }
 
-h4 {
+.hero h4 {
     position: absolute;
     bottom: 3rem;
     right: 8rem;
@@ -182,6 +182,7 @@ h4 {
 }
 
 #aboutMe p {
+    color: var(--aragorn);
     padding-left: 4rem;
 }
 
@@ -190,30 +191,45 @@ h4 {
     border-left: .3rem solid var(--aragorn);
 }
 
-#work .mainProject {
-    width: 94.6%;
+.mainProject {
+    width: 95.6%;
     height: 20.8rem;
     border: .4rem solid var(--frodo);
     margin-top: 4rem;
     margin-left: 4rem;
-    /* position: relative; */
+    position: relative;
 }
+
+#overlay { 
+    width: 100%;
+    height: 20rem;
+    background-color: var(--aragorn);
+    position: absolute;
+    opacity: 0.60; 
+}   
+
+#overlay:hover {
+    opacity: 0.1;
+    transition: all 0.3s ease-in-out;
+} 
 
 .workTag {
     margin: 0;
     display: inline-block;
     color: var(--isengard);
-    background-color: var(--frodo);
+    background-color: rgba(146, 204, 206, 0.7);
     position: relative;
-    bottom: 11rem;
+    bottom: 10rem;
 }
 
-/*.workTag h4 {
+.workTag h4 {
     color: var(--isengard);
     position: relative;
-    bottom: -1.5rem;
-    left: -1rem;
-}*/
+    bottom: -1rem;
+    left: -0.1rem;
+    padding-top: -1rem;
+    padding-right: .3rem;
+}
 
 /*#work .otherProjects {
 
