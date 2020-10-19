@@ -92,6 +92,8 @@ header .navLinks {
     margin-left: 2rem;
 }
 
+/* corrects the double closing brackets for the unordered list in the header */
+/* a quick hack but I couldn't get the nav links to flow in a row without it */
 header li {
     list-style: none;
     margin-right: .6rem;
@@ -160,6 +162,7 @@ a:hover {
 .sideBarInfo {
     width: 100%;
     margin-bottom: 46rem;
+    flex: 1 1 0;
     
 }
 
@@ -188,26 +191,18 @@ a:hover {
 #work {
     width: 100%;
     border-left: .3rem solid var(--aragorn);
-    margin-bottom: 4rem;
 }
 
 .mainProjectCard {
     width: 95.6%;
     height: 28rem;
     border: .4rem solid var(--frodo);
-    margin-top: 4rem;
-    margin-left: 4rem;
-    position: relative;
-    margin-bottom: 1rem;
-}
-
-#overlay { 
-    width: 100%;
-    height: 27.2rem;
     background-color: var(--aragorn);
-    position: absolute;
-    opacity: 0.7; 
-}   
+    opacity: 0.5;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+}
 
 .workTag {
     margin: 0;
@@ -239,21 +234,14 @@ a:hover {
     width: 47.25%;
     height: 15.8rem;
     border: .4rem solid var(--frodo);
+    background-color: var(--aragorn);
+    opacity: 0.5;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    position: relative;
 }
 
-.smallerCards #overlay {
-    width: 100%;
-    height: 15rem;
-    background-color: var(--aragorn);
-    position: absolute;
-    opacity: 0.7; 
-}
-
-#overlay:hover {
-    opacity: 0.1;
+.mainProjectCard:hover, .smallerCards:hover {
+    opacity: 1;
     transition: all 0.3s ease-in-out;
 } 
 
@@ -261,6 +249,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     height: 8rem;
     border-left: .3rem solid var(--aragorn);
     margin-top: 5rem;
@@ -271,9 +260,11 @@ a:hover {
     margin-left: 4rem;
 }
 
+/* corrects the double closing brackets for the unordered list in the contacts */
+/* a quick hack but I couldn't get the nav links to flow in a row without it */
 #contactMe li {
     list-style: none;
-    margin: 0 4rem;
+    margin: 0 2rem;
 }
 
 #contactMe a { 
@@ -281,12 +272,4 @@ a:hover {
     text-decoration: none;
     border-bottom: .25rem solid var(--aragorn);
     padding: .2rem .625rem;
-    
 }
-
-
-
-
-    
-
-
