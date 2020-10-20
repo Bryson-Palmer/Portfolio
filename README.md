@@ -1,7 +1,9 @@
 # Welcome to my Portfolio
 ## Bryson Palmer - Student Jr Web Developer
+I am currently a bootcamp *full stack* web developer student through the *University of Washington* under *Trilogy Education Services*. I'm looking to get into web development for my professional work. I plan on being a capable, creative, team oriented developer by the end of this program. I look forward to implementing this new skill in future employment. 
+
 Goal: </br>
-To give a potential employer work samples from my deployed portfolio. I will build a web portfolio page from scratch that I can add to as the course of this bootcamp progresses. 
+To give a potential employer work samples from my deployed portfolio. I built a web portfolio page from scratch that I can add to as the course of this bootcamp progresses. 
 
 ## Acceptance Criteria 💼
 * When the portfolio is loaded my name, a recent photo, and links to sections about me, my work, and how to contact me are presented.
