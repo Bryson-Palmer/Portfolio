@@ -11,41 +11,43 @@
 </head>
 <body>
     <header> <!-- start header container -->
-        <section class="headerTop"> <!-- section container holding name title and nav links -->
+        
+        <div class="headerTop"> <!-- container holding name title and nav links -->
             <h1 class="title">Bryson Palmer</h1> <!-- my name -->
             <nav class="navLinks">
-                <ul></ul> <!-- unordered list for nav links -->
-                    <!-- page navigation links -->
-                    <li><a href="#aboutMe">About Me</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contactMe">Contact Me</a></li>
-                    <li><a href="https://www.web-resume">Resume</a></li> <!-- create a resume on the web and link it here -->
-                </ul> <!-- end unordered list -->
+                <!-- page navigation links -->
+                <a href="#aboutMe">About Me</a>
+                <a href="#work">Work</a>
+                <a href="#contactMe">Contact Me</a>
+                <a href="https://docs.google.com/document/d/19WL4DclHMyKQ1_jmdgUm_kBA3A-d0P4o2hpSkjHySFw/edit?usp=sharing">Resume</a> <!-- create a resume on the web and link it here -->
             </nav> <!-- end nav -->
-        </section> <!-- end section container -->
-        <section class="hero"> <!-- container holds banner image -->
-            <div class="backgroundColor"></div>
-            <div>
-                <h4>To be better than I was the day before</h4>
-            </div>
-        </section> <!-- banner image -->
+        </div> <!-- end header container -->
+        
     </header> <!-- end of header -->
+
+    <div class="hero"> <!-- container holds banner image -->
+        <div class="backgroundColor"></div>
+        <div>
+            <h4>To be better than I was the day before</h4>
+        </div>
+    </div> <!-- banner image -->
 
     
     <div class="mainContainer"> <!-- main div container -->
+        
         <aside class="sideBar"> <!-- about me, work, contact -->
-            <div class="sideBarInfo"> <!-- about me -->
-                <p>About</p>
-                <p>Me</p>
+            <div class="sideBarInfo" id="aboutMe" > <!-- about me -->
+                <p> About </br> Me </p>
+                <!-- portfolio picture -->
+                <img src="/Images/B.jpg" alt="Image of Bryson Palmer" width= "150px" height= "220px">
             </div>
 
-            <div class="sideBarInfo"> <!-- work -->
-                <P>Work</P>
+            <div class="sideBarInfo" id="work"> <!-- work -->
+                <P> Work </P>
             </div>
 
-            <div class="sideBarInfo"> <!-- contact me -->
-                <p>Contact</p>
-                <p>Me</p>
+            <div class="sideBarInfo" id="contactMe"> <!-- contact me -->
+                <p> Contact </br> Me </p>
             </div>
         </aside> <!-- end aside -->
 
@@ -65,14 +67,14 @@
                 <div class="mainProjectCard"> <!-- main project container -->
                     <!-- Photo by bongkarn thanyakij from https://www.pexels.com/photo/person-holding-white-printer-paper-3740390/ -->
                     <a href="https://bryson-palmer.github.io/Horiseon_codeRefactoring/" target="_blank"><img src="/Images/MainProject.png" alt="Image of my first project code refactoring Horiseon Social Solutions, inc. website" width="100%" height="272rem"></a>
-                    <div class="workTag">
+                    <div class="mainWorkTag">
                         <h4>Horiseon</h4> <!-- title of project -->
                         <p>HTML/CSS</p>  <!-- technical language or skill -->
                     </div> <!-- end of the work work tag -->
                 </div> <!-- end of main project -->
 
                 <div class="otherProjects"> <!-- other projects container -->
-                    <div class="smallerCards"> <!-- each smaller card -->
+                    <div class="smallerCards"> <!-- bio page card -->
                         <!-- illustration by _A Bit Of Miranda_ from abitofmiranda.com -->
                         <a href="https://bryson-palmer.github.io/student_bio/" target="_blank"><img src="/Images/PITP.jpeg" alt="Bryson Palmer's biography page" width="100%" height="150rem"></a>
                         <div class="workTag">
@@ -81,7 +83,7 @@
                         </div> <!-- end of the work work tag -->
                     </div> <!-- end of smaller card -->
 
-                    <div class="smallerCards"> <!-- each smaller card -->
+                    <div class="smallerCards"> <!-- mice invaders card -->
                         <!-- photo by George Becker from https://www.pexels.com/photo/arcade-arcade-controller-arcade-stick-blur-374914/ -->
                         <a href="https://scratch.mit.edu/projects/428411523" target ="_blank"><img src="/Images/Video-Game.jpg" alt="Mice Invaders my first scratch game" width="100%" height= "150rem"></a>
                         <div class="workTag">
@@ -90,7 +92,7 @@
                         </div> <!-- end of the work work tag -->
                     </div> <!-- end of smaller card -->
 
-                    <div class="smallerCards"> <!-- each smaller card -->
+                    <div class="smallerCards"> <!-- SpaceX card -->
                         <!-- photo by SpaceX from https://www.pexels.com/photo/white-outer-space-satellite-586056/ -->
                         <a href="https://www.spacex.com/" target="_blank"><img src="/Images/SpaceX.jpg" alt="white outer space satellite" width="100%" height="150rem"></a>
                         <div class="workTag">
@@ -99,7 +101,7 @@
                         </div> <!-- end of the work work tag -->
                     </div> <!-- end of smaller card -->
 
-                    <div class="smallerCards"> <!-- each smaller card -->
+                    <div class="smallerCards"> <!-- NASA card -->
                         <!-- photo by Pixabay from https://www.pexels.com/photo/high-angle-view-of-a-man-256381/ -->
                         <a href="https://www.nasa.gov/topics/technology/index.html" target="_blank"><img src="/Images/Technology.jpg" alt="NASA technologies" width="100%" height="150rem"></a>
                         <div class="workTag">
@@ -113,13 +115,11 @@
 
             <section id="contactMe"> <!-- contact me container -->
                 <nav id="contactNav"> <!-- contact links -->
-                    <ul></ul> <!-- I know I've got a double closing bracket but somehow I tricked the page into showing what I want with this technique -->
-                        <li><a href="tel:+15098450394">509.845.0394</a></li>
-                        <li><a href="brysonpalmer@website.com">brysonpalmer@website.com</a></li>
-                        <li><a href="mailto:brysonpalmer@gmail.com">Email</a></li>
-                        <li><a href="https://github.com/Bryson-Palmer">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/bryson-palmer-555b3862?trk=people-guest_people_search-card">Linkedin</a></li>
-                    </ul> <!-- end of unordered list -->
+                    <a href="tel:+15098450394">509.845.0394</a>
+                    <a href="brysonpalmer@website.com">brysonpalmer@website.com</a>
+                    <a href="mailto:brysonpalmer@gmail.com">Email</a>
+                    <a href="https://github.com/Bryson-Palmer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/bryson-palmer-555b3862?trk=people-guest_people_search-card">Linkedin</a>
                 </nav> <!-- end of contact nav links-->
             </section> <!-- end of contact me container -->
         </main> <!-- end main content -->

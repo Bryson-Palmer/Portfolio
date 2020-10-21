@@ -92,19 +92,14 @@ header .navLinks {
     margin-left: 2rem;
 }
 
-/* corrects the double closing brackets for the unordered list in the header */
-/* a quick hack but I couldn't get the nav links to flow in a row without it */
-header li {
-    list-style: none;
-    margin-right: .6rem;
-}
 
 header a {
     color: var(--frodo);
     text-decoration: none;
     border-bottom: .25rem solid var(--frodo);
     padding: .2rem .625rem;
-    
+    list-style: none;
+    margin-right: .6rem;
 }
 
 a:hover {
@@ -113,6 +108,7 @@ a:hover {
 }
 
 .hero {
+    /* display: flex; */
     position: relative;
     height: 28rem;
     width: 100%; 
@@ -156,21 +152,41 @@ a:hover {
     font-size: 4rem;
     font-weight: bold;
     margin-right: 2rem;
-    
 }
 
 .sideBarInfo {
-    width: 100%;
-    margin-bottom: 46rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 60rem;
     flex: 1 1 0;
     
 }
 
-.sideBarInfo p {
-    display: flex;
-    justify-content: flex-end;
-    line-height: 3rem;
-    margin-top: 1rem;
+.sideBar  #aboutMe {
+    margin: 0 -1rem;
+    flex: 1 1 0;
+}
+
+.sideBarInfo img {
+    /* width: auto; */
+    margin: 0rem -0.5rem;
+    border-radius: 10%
+}
+
+.sideBar  #work {
+    margin: 0.5rem 1rem;
+    bottom: 5rem;
+    /* flex: 1 1 0; */
+}
+
+.sideBar  #contactMe {
+    max-width: auto;
+    margin: 0.5rem 1rem;
+    bottom: 5rem;
+    /* flex-shrink: 1; */
 }
 
 .content {
@@ -178,17 +194,17 @@ a:hover {
     margin-right: 7rem;
 }
 
-#aboutMe {
+.content #aboutMe {
     width: 100%;
     border-left: .3rem solid var(--aragorn);
 }
 
-#aboutMe p {
+.content #aboutMe p {
     color: var(--aragorn);
     padding-left: 4rem;
 }
 
-#work {
+.content #work {
     width: 100%;
     border-left: .3rem solid var(--aragorn);
 }
@@ -197,35 +213,27 @@ a:hover {
     width: 95.6%;
     height: 28rem;
     border: .4rem solid var(--frodo);
-    background-color: var(--aragorn);
     opacity: 0.5;
     margin-top: 4rem;
     margin-bottom: 1rem;
     margin-left: 4rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.workTag {
+.mainWorkTag {
     margin: 0;
-    display: inline-block;
+    line-height: 1.5rem;
+    padding: 0.5rem 0.5rem;
     color: var(--isengard);
     background-color: rgba(146, 204, 206, 0.7);
     position: relative;
-    bottom: 10rem;
-}
-
-.workTag h4 {
-    color: var(--isengard);
-    position: relative;
-    bottom: -1rem;
-    left: -0.1rem;
-    padding-top: -1rem;
-    padding-right: .3rem;
+    bottom: 9.5rem;
 }
 
 .otherProjects {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     width: 100%;
     margin-left: 4rem;
 }
@@ -234,10 +242,29 @@ a:hover {
     width: 47.25%;
     height: 15.8rem;
     border: .4rem solid var(--frodo);
-    background-color: var(--aragorn);
     opacity: 0.5;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.workTag {
+    margin: 0;
+    line-height: 1.5rem;
+    color: var(--isengard);
+    background-color: rgba(146, 204, 206, 0.7);
+    position: relative;
+    bottom: 8rem;
+}
+
+.workTag h4 {
+    margin: 0rem auto;
+    padding: 0.5rem 0.5rem;
+}
+
+.workTag p {
+    padding: 0rem 0.5rem;
 }
 
 .mainProjectCard:hover, .smallerCards:hover {
@@ -245,26 +272,17 @@ a:hover {
     transition: all 0.3s ease-in-out;
 } 
 
-#contactMe {
+.content #contactMe {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    height: 8rem;
+    height: auto;
     border-left: .3rem solid var(--aragorn);
     margin-top: 5rem;
 }
 
 #contactNav {
-    display: flex;
     margin-left: 4rem;
-}
-
-/* corrects the double closing brackets for the unordered list in the contacts */
-/* a quick hack but I couldn't get the nav links to flow in a row without it */
-#contactMe li {
-    list-style: none;
-    margin: 0 2rem;
 }
 
 #contactMe a { 
@@ -272,4 +290,5 @@ a:hover {
     text-decoration: none;
     border-bottom: .25rem solid var(--aragorn);
     padding: .2rem .625rem;
+    margin: 0;
 }
