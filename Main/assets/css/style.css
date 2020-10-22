@@ -111,7 +111,7 @@ a:hover {
     position: relative;
     height: 28rem;
     width: 100%; 
-    background-image: url("/Images/Glacier-National-Park.png");
+    background-image: url("Images/Glacier-National-Park.png");
     background-size: cover;
     background-position: center;
     border-bottom: .2rem solid var(--isengard);
