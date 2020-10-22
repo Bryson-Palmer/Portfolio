@@ -5,7 +5,18 @@ I am currently a bootcamp *full stack* web developer student through the *Univer
 Goal: </br>
 To give a potential employer work samples from my deployed portfolio. I built a web portfolio page from scratch that I can add to as the course of this bootcamp progresses. 
 
-## Acceptance Criteria 💼
+## Bookmark Links
+[💼 Acceptance Criteria] (#acceptance-criteria)
+[🏆 In Addition] (#in-addition)
+[Links] (#links)
+[Full Screenshot] (#full_screen)
+[iPad Screenshot] (#ipad)
+[iPhone Screenshot] (#iphone)
+[Issues to Address in the Future] (#issues-to-address-in-the-future)
+[Other Information] (#other-information)
+
+
+## 💼 Acceptance Criteria 
 * When the portfolio is loaded my name, a recent photo, and links to sections about me, my work, and how to contact me are presented.
 * When navigation links are clicked, the UI scrolls to the corresponding section.
 * When the work link is clicked, the UI scrolls to a section with titled images of my applications.
@@ -15,7 +26,7 @@ To give a potential employer work samples from my deployed portfolio. I built a 
 
 - [✔️] **Status Complete**
 
-## In Addition 🏆
+## 🏆 In Addition 
 * Added meta data to aid in *search engine optimization* by adding a description and keywords to the head of the code.
 * Added meta data to set the *viewport* to make website look good on all devices.
 * Included *comments* throughout the **HTML** and **CSS** code to label and/or explain about function.
@@ -24,23 +35,25 @@ To give a potential employer work samples from my deployed portfolio. I built a 
 </br>
 __________________________
 
+## Links
+
 Link to **repository** on **Git Hub** - [https://github.com/Bryson-Palmer/Portfolio.git](https://github.com/Bryson-Palmer/Portfolio.git)
 
 Live **URL** link to **my portfolio** - [https://bryson-palmer.github.io/Portfolio/](https://bryson-palmer.github.io/Portfolio/)
 </br>
 __________________________
 
-**Screenshot of full screen**
+## Screenshot of full screen  📸
 
-![Screenshot1](./assets/css/Images/Portfolio_full_screen.png) 📸
+![full_screen](./assets/css/Images/Portfolio_full_screen.png)
 
-**Screenshot of iPad screen**
+## Screenshot of iPad screen 📸
 
-![Screenshot2](./assets/css/Images/Portfolio_iPad.png) 📸
+![iPad](./assets/css/Images/Portfolio_iPdad.png) 
 
-**Screenshot of Iphone X**
+## Screenshot of iPhone X 📸
 
-![Screenshot3](./assets/css/Images/Portfolio_iPhone_X.png) 📸
+![iPhone](./assets/css/Images/Portfolio_iPhone_X.png) 
 
 ## Issues to Address in the Future 🔍 
 Utilize **JavaScript** to give my portfolio a truly interactive user experience.
