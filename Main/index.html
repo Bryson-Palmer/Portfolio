@@ -33,37 +33,34 @@
     </div> <!-- banner image -->
 
     
-    <div class="mainContainer"> <!-- main div container -->
-        
-        <aside class="sideBar"> <!-- about me, work, contact -->
-            <div class="sideBarInfo" id="aboutMe" > <!-- about me -->
-                <p> About </br> Me </p>
+    <main class="mainContainer"> <!-- main container -->    
+
+        <div class="divContainer"> <!-- about me container-->
+
+            <div class="sideBarInfo" id="aboutMe" > <!-- about me side -->
+                <p>About</p>
+                <p>Me</p>
                 <!-- portfolio picture -->
-                <img src="/Images/B.jpg" alt="Image of Bryson Palmer" width= "150px" height= "220px">
+                <img src="/Images/B.jpg" alt="Image of Bryson Palmer" width= "125px" height= "200px">
             </div>
 
-            <div class="sideBarInfo" id="work"> <!-- work -->
-                <P> Work </P>
-            </div>
-
-            <div class="sideBarInfo" id="contactMe"> <!-- contact me -->
-                <p> Contact </br> Me </p>
-            </div>
-        </aside> <!-- end aside -->
-
-
-        <main class="content">
-            <section id="aboutMe"> <!-- about me info -->
+            <div id="aboutMeContent"> <!-- about me info -->
                 <p><!-- start slipsum code -->
                     Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
-
-                </p> <!-- info -->
+                </p> <!-- end slipsum info -->
                 <p><!-- start slipsum code -->
-                    You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.
-                </p> <!-- info -->
-            </section> <!-- end of about me inof -->
+                        You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.
+                </p> <!-- end slipsum info -->
+            </div> <!-- end of about me content -->
+        </div> <!-- end about me container -->
             
-            <section id="work"> <!-- container holding all projects -->
+        <div class="divContainer"> <!-- work container -->
+
+            <div class="sideBarInfo" id="work"> <!-- work side -->
+                <P>Work</P>
+            </div>
+
+            <div id="workContent"> <!-- container holding all projects -->
                 <div class="mainProjectCard"> <!-- main project container -->
                     <!-- Photo by bongkarn thanyakij from https://www.pexels.com/photo/person-holding-white-printer-paper-3740390/ -->
                     <a href="https://bryson-palmer.github.io/Horiseon_codeRefactoring/" target="_blank"><img src="/Images/MainProject.png" alt="Image of my first project code refactoring Horiseon Social Solutions, inc. website" width="100%" height="272rem"></a>
@@ -111,9 +108,17 @@
                     </div> <!-- end of smaller card -->
 
                 </div> <!-- end of other projects -->
-            </section> <!-- end of work container -->
+            </div> <!-- end of work content -->
+        </div> <!-- end of work container-->
 
-            <section id="contactMe"> <!-- contact me container -->
+        <div class="divContainer"> <!-- contact me container -->
+
+            <div class="sideBarInfo" id="contactMe"> <!-- contact me -->
+                <p>Contact</p>
+                <p>Me</p>
+            </div>
+
+            <div id="contactMeContent"> <!-- contact me container -->
                 <nav id="contactNav"> <!-- contact links -->
                     <a href="tel:+15098450394">509.845.0394</a>
                     <a href="brysonpalmer@website.com">brysonpalmer@website.com</a>
@@ -121,9 +126,11 @@
                     <a href="https://github.com/Bryson-Palmer">GitHub</a>
                     <a href="https://www.linkedin.com/in/bryson-palmer-555b3862?trk=people-guest_people_search-card">Linkedin</a>
                 </nav> <!-- end of contact nav links-->
-            </section> <!-- end of contact me container -->
-        </main> <!-- end main content -->
-    </div> <!-- end of main div container -->
+            </div> <!-- end of contact me content -->
+
+        </div> <!-- end of contact me container -->
+        
+    </main> <!-- end of main container -->
 
 </body>
 </html>
