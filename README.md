@@ -8,7 +8,7 @@ To give a potential employer work samples from my deployed portfolio. I built a 
 
 
 ## Page Navigation Links
-[Acceptance Criteria](acceptance-criteria) </br>
+[Acceptance Criteria](#acceptance-criteria) </br>
 [In Addition](#in-addition) </br>
 [Links to Git Hub and Live url](#links) </br>
 [Full Screenshot](#screenshot-of-full-screen) </br>
