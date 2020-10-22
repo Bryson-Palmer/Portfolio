@@ -30,9 +30,17 @@ Live **URL** link to **my portfolio** - [https://bryson-palmer.github.io/Portfol
 </br>
 __________________________
 
-**Screenshot image**
+**Screenshot of full screen**
 
-![Screenshot]() 📸
+![Screenshot1](./assets/css/Images/Portfolio_full_screen.png) 📸
+
+**Screenshot of iPad screen**
+
+![Screenshot2](./assets/css/Images/Portfolio_iPad.png) 📸
+
+**Screenshot of Iphone X**
+
+![Screenshot3](./assets/css/Images/Portfolio_iPhone_X.png) 📸
 
 ## Issues to Address in the Future 🔍 
 Utilize **JavaScript** to give my portfolio a truly interactive user experience.
