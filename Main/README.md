@@ -20,12 +20,14 @@ To give a potential employer work samples from my deployed portfolio. I built a 
 * Added meta data to set the *viewport* to make website look good on all devices.
 * Included *comments* throughout the **HTML** and **CSS** code to label and/or explain about function.
 
-- [✔️] **Status Complete** 
+- [✔️] **Status Complete**  
+</br>
 __________________________
 
 Link to **repository** on **Git Hub** - [https://github.com/Bryson-Palmer/Portfolio.git](https://github.com/Bryson-Palmer/Portfolio.git)
 
 Live **URL** link to **my portfolio** - [https://bryson-palmer.github.io/Portfolio/](https://bryson-palmer.github.io/Portfolio/)
+</br>
 __________________________
 
 **Screenshot image**
