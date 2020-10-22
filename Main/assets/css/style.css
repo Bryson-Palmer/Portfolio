@@ -94,6 +94,7 @@ header .navLinks {
 
 
 header a {
+    display: flex;
     color: var(--frodo);
     text-decoration: none;
     border-bottom: .25rem solid var(--frodo);
@@ -163,7 +164,7 @@ a:hover {
 
 .sideBarInfo p {
     line-height: 6rem;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: bold;
     margin: 0 3rem;
     display: flex;
@@ -190,7 +191,7 @@ a:hover {
 }
 
 .mainProjectCard {
-    width: 95.6%;
+    width: 95.3%;
     height: 28rem;
     border: .4rem solid var(--frodo);
     opacity: 0.5;
@@ -269,5 +270,88 @@ a:hover {
     color: var(--mordor);
     text-decoration: none;
     border-bottom: .25rem solid var(--aragorn);
-    margin: 0 1rem;
+    margin: 0 5rem;
+}
+
+
+@media screen and ( max-width: 1437px) {
+    #contactMeContent a {
+        font-size: 2rem;
+        margin: 0 3rem;
+    }
+}
+
+@media screen and ( max-width: 1298px) {
+    #contactMeContent a {
+        font-size: 2rem;
+        margin: 0 2rem;
+    }
+}
+
+@media screen and ( max-width: 1166px) {
+    #contactMeContent a {
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and ( max-width: 767px) {
+    .sideBarInfo p {
+        line-height: 4rem;
+        font-size: 4rem;
+    }
+
+    #contactMeContent a {
+        font-size: 1.5rem;
+        margin: 0 0rem;
+    }
+}
+
+@media screen and ( max-width: 598px) {
+    .mainContainer {
+        margin: 2rem 0rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h4 {
+        right: 1.5rem;
+    }
+    
+    .divContainer {
+        flex-direction: column;
+    }
+
+    .sideBarInfo {
+        border-right: 0rem;
+    }
+
+    .sideBarInfo p {
+        display: none;
+    }
+
+    .sideBarInfo img {
+        margin-right: -20rem;
+        margin-bottom: 3rem;
+    }
+
+    .mainProjectCard {
+        width: 97.5%;
+    }
+
+    .smallerCards {
+        width: 100%;
+    }
+
+    #contactNav {
+        margin-right: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+            
+    #contactMeContent a {
+        font-size: 2rem;
+    }
 }
