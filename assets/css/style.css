@@ -7,13 +7,6 @@
     --gandalf: #eeeef7;
 }
 
-/* set content highlight color and background */
-/* ::selection is what is selected (highlighted) by the user*/
-/*::selection {
-    background-color: var(--bright-turquoise);
-    color: var(--outer-space);
-}*/
-
 html {
     /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
     font-size: 62.5%; /* 10/16 = 0.625*/
@@ -70,6 +63,7 @@ p {
 .headerTop {
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: var(--isengard);
@@ -77,19 +71,16 @@ p {
 
 /* title card in header top set to flex start, with a bit of opacity, and border radius properties */
 .title {
-    justify-content: flex-start;
     background-color: rgba(146, 204, 206, 0.9);
     color: var(--isengard);
     border-radius: 2rem 2rem 0rem 0rem;
     padding: 0rem 1.5rem 0.4rem 1.5rem;
-    margin-left: 0.7rem;
-
 }
 
 /* setting container holding nav links to flex to get links to lay in a row */
 .navLinks {
     display: flex;
-    margin-right: 6rem;
+    margin-bottom: 1rem;
 }
 
 /* styling for the link words. Got rid of default underlines and styled my own */
@@ -104,7 +95,7 @@ header a {
 }
 
 /* using hover pseudo code to get the pointer to change. Adding white shadow in a smooth transition when hovered on */
-a:hover {
+header a:hover {
     text-shadow: 0rem 0rem .15rem var(--gandalf);
     transition: all 0.2s ease-in-out;
 }
@@ -113,8 +104,9 @@ a:hover {
 .hero {
     position: relative;
     height: 28rem;
-    width: 100%; 
-    background-image: url("Images/Glacier-National-Park.png");
+    width: 100vw; 
+    background-image: url("/assets/Images/Glacier-National-Park.png");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-bottom: .2rem solid var(--isengard);
@@ -123,36 +115,36 @@ a:hover {
 /* colored filter overlay set over the hero image with to a low opacity to make the picture colors more homogenous with color themes */
 .backgroundColor {
     position: absolute;
-    width: 100%;
-    height: 28rem;
     background-color: var(--aragorn);
     opacity: 0.15;
 }
 
 /* styling subtitle text with a position of absolute text shadow */
 .hero h4 {
-    position: absolute;
-    bottom: 3rem;
-    right: 8rem;
+    position: absolute; 
+    bottom: 1rem;
+    right: 2rem;
+    text-align: right;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
     text-shadow: 0rem 0rem .9rem var(--mordor);
     color: var(--gandalf);
-    padding: .5rem 1rem .625rem 1rem;
+    padding: 0rem 1rem .625rem 1rem;
 }
 
 /* main container properties setting size and flex */
 .mainContainer {
-    width: inherit;
-    margin: 4rem 7rem;
+    width: 90vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 /* styling for the containers holding about me, work, and contact me */
 /* setting flex properties to pass on to children */
 .divContainer {
-    width: inherit;
     margin-bottom: 4rem;
-    display: flex;
     color: var(--aragorn);
 }
 
@@ -160,63 +152,52 @@ a:hover {
 /* setting flex properties to pass on to children */
 /* creating border between side section and content section */
 .sideBarInfo {
-    width: 20%;
     height: auto;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    border-right: .3rem solid var(--aragorn);
 }
 
 /* styling for the text in the side bar info section */
 .sideBarInfo p {
-    line-height: 6rem;
-    font-size: 5rem;
+    line-height: 0rem;
+    font-size: 4rem;
     font-weight: bold;
-    margin: 0 3rem;
-    display: flex;
-    justify-content: flex-end;
+    margin: 3rem auto 2rem auto;
+    text-align: center;
 }
 
 /* styling for the image in the side bar info section */
 .sideBarInfo img {
-    width: auto;
-    margin: 1rem 3rem;
+    height: auto;
+    float: left;
+    margin: 1rem 2rem 1rem 0;
     border-radius: 10%
-}
-
-/* setting the container width for about me */
-#aboutMeContent {
-    width: 80%;
 }
 
 /* styling for text in about me container */
 #aboutMeContent p {
     color: var(--aragorn);
-    margin-left: 4rem;
 }
 
 /* setting container width for work */
 #workContent {
-    width: 80%;
+    width: 90vw;
+    margin: 0 auto;
 }
 
 /* main work card styling properties flexed. Setting opacity at 50% until it's hovered over */
 .mainProjectCard {
-    width: 95.3%;
+    width: 100%;
     height: 28rem;
     border: .4rem solid var(--frodo);
     opacity: 0.5;
-    margin-top: 0rem;
+    margin-right: auto;
     margin-bottom: 1rem;
-    margin-left: 4rem;
-    display: flex;
-    flex-wrap: wrap;
+    margin-left: auto;
 }
 
 /* properties for the title tag in the main work card */
 .mainWorkTag {
+    width: 40%;
     margin: 0;
     line-height: 1.5rem;
     padding: 0.5rem 0.5rem;
@@ -228,19 +209,15 @@ a:hover {
 
 /* properties for the container holding the other projects flexed */
 .otherProjects {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: 4rem;
+    width: inherit;
+    margin: 0 auto;
 }
 
 /* setting width of smaller card containers, opacity, and flex properties */
 .smallerCards { 
-    width: 47.25%;
     height: 15.8rem;
     border: .4rem solid var(--frodo);
     opacity: 0.5;
-    margin-right: 1rem;
     margin-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -274,13 +251,13 @@ a:hover {
 } 
 
 /* styling properties for contact me container setting width and flex */
-#contactMeContent {
+#contactNav {
     display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    width: 80%;
-    margin-top: 2rem;
-    margin-left: 4rem;
+    flex-direction: column;
+    text-align: center;
+    line-height: 3rem;
+    align-items: center;
+    margin-top: 4rem;
 }
 
 /* styling properties for the links in the contact me section */
@@ -288,104 +265,140 @@ a:hover {
     color: var(--mordor);
     text-decoration: none;
     border-bottom: .25rem solid var(--aragorn);
-    margin: 0 5rem;
 }
 
-/* first medaia query sets max width and then font and margin shrink */
-@media screen and ( max-width: 1437px) {
-    #contactMeContent a {
-        font-size: 2rem;
-        margin: 0 3rem;
-    }
-}
-
-/* second medaia query sets max width and then margin shrink */
-@media screen and ( max-width: 1298px) {
-    #contactMeContent a {
-        font-size: 2rem;
-        margin: 0 2rem;
-    }
-}
-
-/* third medaia query sets max width and then font and margin shrink */
-@media screen and ( max-width: 1166px) {
-    #contactMeContent a {
-        font-size: 1.5rem;
-        margin: 0 1rem;
-    }
-}
-
-/* tablet view width. Sizing down the font fo the section titles on the left side */
-/* continue downsizing links in contact me section */
-@media screen and ( max-width: 767px) {
-    .sideBarInfo p {
-        line-height: 4rem;
-        font-size: 4rem;
-    }
-
-    #contactMeContent a {
-        font-size: 1.5rem;
-        margin: 0 0rem;
-    }
-}
-
-/* iPhone view width. Makes the side section disapear completely */
-/* flexing everything into a colomn. Moving picture to the top of the main */
-/* header title and header links center. Smaller cards grow to the width of the main card */
-/* contact me links center in a column */
-@media screen and ( max-width: 598px) {
-    .mainContainer {
-        margin: 2rem 0rem;
-        justify-content: center;
-        align-items: center;
-    }
-
+@media screen and ( min-width: 550px) {
     .headerTop {
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .title {
+        margin: 0.7rem;
     }
 
     .navLinks {
-        margin: 0 auto;
+        margin-right: 2rem;
     }
-   
-    .hero h4 {
-        margin-left: 0rem;
-        right: 1rem;
-    }
-    
+}
+
+@media screen and ( min-width: 768px) {
+
     .divContainer {
-        flex-direction: column;
+        display: flex;
     }
 
     .sideBarInfo {
-        border-right: 0rem;
+        width: 25vw;
+        border-right: .3rem solid var(--aragorn);
+        padding-top: 0rem;
     }
 
     .sideBarInfo p {
-        display: none;
+        line-height: 4rem;
+        margin-right: 2rem;
+        display: flex;
+        justify-content: center;
     }
 
-    .sideBarInfo img {
-        margin-right: -18rem;
-        margin-bottom: 3rem;
+    #aboutMeContent {
+        width: 75vw;
+    }
+    
+    #aboutMeContent p {
+        margin-top: 3rem;
+        margin-left: 4rem;
     }
 
-    .mainProjectCard {
-        width: 97.5%;
+    #workContent {
+        width: 62.5vw;
+        margin-left: 4rem;
+    }
+
+    .otherProjects {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
     }
 
     .smallerCards {
-        width: 100%;
+        width: 50%;
+        margin-left: 0rem;
     }
 
+    #contactMe{
+        width: 25vw;
+    }
+
+    #contactMeContent {
+        width: 75vw;
+    }
+
+
     #contactNav {
-        margin-right: 5rem;
+        width: 75vw;
+        align-items: center;
+        margin: 0rem;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-            
-    #contactMeContent a {
-        font-size: 2rem;
+}
+
+@media screen and ( min-width: 1024px) {
+    .sideBarInfo {
+        width: 20vw;
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    #aboutMeContent {
+        width: 80vw;
+    }
+
+    #workContent {
+        width: 68vw;
+    }
+
+    #contactMe{
+        width: 20vw;
+    }
+
+    #contactMeContent {
+        width: 72vw;
     }
 }
+
+@media screen and ( min-width: 1250px) {
+    .mainContainer {
+        /* margin: 0 auto; */
+    }
+
+    .divContainer {
+        /* max-width: 1250px; */
+    }
+
+    .sideBarInfo {
+        /* max-width: 20vw; */
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    #aboutMeContent {
+        max-width: 80vw;
+    }
+
+    #workContent {
+        max-width: 80vw;
+        margin-left: 4rem;
+    }
+
+    #contactMe{
+        /* max-width: 20vw; */
+    }
+
+    #contactMeContent {
+        max-width: 72vw;
+    }
+
+}
+
