@@ -104,7 +104,7 @@ header a:hover {
 }
 
 .hero img {
-    height: 20vh;
+    height: auto;
     border-bottom: .2rem solid var(--isengard);
 }
 
