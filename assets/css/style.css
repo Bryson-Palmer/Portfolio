@@ -79,18 +79,15 @@ p {
 
 /* setting container holding nav links to flex to get links to lay in a row */
 .navLinks {
-    display: flex;
     margin-bottom: 1rem;
 }
 
 /* styling for the link words. Got rid of default underlines and styled my own */
 header a {
-    display: flex;
     color: var(--frodo);
     text-decoration: none;
     border-bottom: .25rem solid var(--frodo);
     padding: .2rem .625rem;
-    margin-left: 0rem;
     margin-right: .6rem;
 }
 
@@ -120,7 +117,6 @@ header a:hover {
 
 /* styling subtitle text with a position of absolute text shadow */
 .hero h4 {
-    width: 70%;
     position: absolute;
     bottom: 1rem;
     right: 1rem;
@@ -287,7 +283,6 @@ header a:hover {
         width: 20%;
         border-right: .3rem solid var(--aragorn);
         display: flex;
-        flex-direction: flex-end;
     }
 
     .sideBarInfo p {
