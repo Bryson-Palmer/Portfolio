@@ -105,7 +105,7 @@ header a:hover {
     position: relative;
     height: 28rem;
     width: 100vw; 
-    background-image: url("assets/Images/Glacier-National-Park.png");
+    background-image: url("/assets/Images/Glacier-National-Park.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
