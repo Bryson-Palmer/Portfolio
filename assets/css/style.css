@@ -99,13 +99,12 @@ header a:hover {
 
 /* properties for hero image. Set the container to relative position so the children could be set to absolute */
 .hero {
+    margin-bottom: 1rem;
     position: relative;
-    height: 28rem;
-    width: 100vw; 
-    background-image: url("/assets/images/Glacier-Park.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+}
+
+.hero img {
+    height: 20vh;
     border-bottom: .2rem solid var(--isengard);
 }
 
@@ -121,11 +120,11 @@ header a:hover {
     bottom: 1rem;
     right: 1rem;
     text-align: right;
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     text-shadow: 0rem 0rem .9rem var(--mordor);
     color: var(--gandalf);
-    padding: 0rem 1rem .625rem 1rem;
+    padding: 0rem 1rem 0rem 1rem;
 }
 
 /* main container properties setting size and flex */
@@ -265,10 +264,12 @@ header a:hover {
     }
 
     .title {
+        width: auto;
         margin: 0.7rem;
     }
 
     .navLinks {
+        display: flex;
         margin-right: 2rem;
     }
 }
