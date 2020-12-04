@@ -17,7 +17,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     color: var(--mordor);
     background-color: var(--gandalf);
@@ -43,15 +43,15 @@ h3 {
 }
   
 h4 {
-    font-size: 2.5rem;
-}
-  
-h5 {
     font-size: 2rem;
 }
   
-h6 {
+h5 {
     font-size: 1.5rem;
+}
+  
+h6 {
+    font-size: 1.25rem;
 }
   
 p {
@@ -114,16 +114,26 @@ header a:hover {
 
 /* colored filter overlay set over the hero image with to a low opacity to make the picture colors more homogenous with color themes */
 .backgroundColor {
-    position: absolute;
     background-color: var(--aragorn);
     opacity: 0.15;
 }
 
+/* styling for the image in the side bar info section */
+.hero img {
+    width: 20%;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    height: auto;
+    border-radius: 10%
+}
+
 /* styling subtitle text with a position of absolute text shadow */
 .hero h4 {
-    position: absolute; 
+    width: 70%;
+    position: absolute;
     bottom: 1rem;
-    right: 2rem;
+    right: 1rem;
     text-align: right;
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -161,16 +171,8 @@ header a:hover {
     line-height: 0rem;
     font-size: 4rem;
     font-weight: bold;
-    margin: 3rem auto 2rem auto;
+    margin: 3rem 0;
     text-align: center;
-}
-
-/* styling for the image in the side bar info section */
-.sideBarInfo img {
-    height: auto;
-    float: left;
-    margin: 1rem 2rem 1rem 0;
-    border-radius: 10%
 }
 
 /* styling for text in about me container */
@@ -204,7 +206,7 @@ header a:hover {
     color: var(--isengard);
     background-color: rgba(146, 204, 206, 0.7);
     position: relative;
-    bottom: 9.5rem;
+    bottom: 10rem;
 }
 
 /* properties for the container holding the other projects flexed */
@@ -279,29 +281,32 @@ header a:hover {
     .navLinks {
         margin-right: 2rem;
     }
+
+    .hero img {
+        max-width: 17rem;
+    }
 }
 
 @media screen and ( min-width: 768px) {
-
     .divContainer {
+        width: 100%;
         display: flex;
     }
 
     .sideBarInfo {
-        width: 25vw;
+        width: 20%;
         border-right: .3rem solid var(--aragorn);
-        padding-top: 0rem;
+        display: flex;
+        flex-direction: flex-end;
     }
 
     .sideBarInfo p {
         line-height: 4rem;
-        margin-right: 2rem;
-        display: flex;
-        justify-content: center;
+        font-size: 4rem;
     }
 
     #aboutMeContent {
-        width: 75vw;
+        width: 80%;
     }
     
     #aboutMeContent p {
@@ -310,11 +315,12 @@ header a:hover {
     }
 
     #workContent {
-        width: 62.5vw;
+        width: 75%;
         margin-left: 4rem;
     }
 
     .otherProjects {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         margin: 0;
@@ -326,16 +332,16 @@ header a:hover {
     }
 
     #contactMe{
-        width: 25vw;
+        width: 20%;
+        margin-left: 0rem;
+        padding-right: 0rem;
     }
 
     #contactMeContent {
-        width: 75vw;
+        width: 80%;
     }
 
-
     #contactNav {
-        width: 75vw;
         align-items: center;
         margin: 0rem;
         display: flex;
@@ -346,59 +352,40 @@ header a:hover {
 
 @media screen and ( min-width: 1024px) {
     .sideBarInfo {
-        width: 20vw;
-        font-size: 3rem;
-        margin: 0;
+        width: 20%;
     }
 
     #aboutMeContent {
-        width: 80vw;
+        width: 80%;
     }
 
     #workContent {
-        width: 68vw;
-    }
-
-    #contactMe{
-        width: 20vw;
+        width: 75%;
     }
 
     #contactMeContent {
-        width: 72vw;
+        width: 80%;
     }
 }
 
 @media screen and ( min-width: 1250px) {
-    .mainContainer {
-        /* margin: 0 auto; */
-    }
-
-    .divContainer {
-        /* max-width: 1250px; */
-    }
-
     .sideBarInfo {
-        /* max-width: 20vw; */
+        max-width: 20vw; 
         font-size: 3rem;
         margin: 0;
     }
 
-    #aboutMeContent {
-        max-width: 80vw;
-    }
-
     #workContent {
-        max-width: 80vw;
-        margin-left: 4rem;
+        max-width: 1000px;
+        margin: 0 auto;
     }
 
-    #contactMe{
-        /* max-width: 20vw; */
+    .mainProjectCard {
+        max-width: 1000px;
     }
 
-    #contactMeContent {
-        max-width: 72vw;
+    .otherProjects {
+        max-width: 1000px;
     }
-
 }
 
