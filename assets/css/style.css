@@ -118,16 +118,6 @@ header a:hover {
     opacity: 0.15;
 }
 
-/* styling for the image in the side bar info section */
-.hero img {
-    width: 20%;
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    height: auto;
-    border-radius: 10%
-}
-
 /* styling subtitle text with a position of absolute text shadow */
 .hero h4 {
     width: 70%;
@@ -173,6 +163,14 @@ header a:hover {
     font-weight: bold;
     margin: 3rem 0;
     text-align: center;
+}
+
+/* styling for my image */
+#aboutMeContent img {
+    float: left;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 1rem;
 }
 
 /* styling for text in about me container */
@@ -252,6 +250,7 @@ header a:hover {
     transition: all 0.3s ease-in-out;
 } 
 
+
 /* styling properties for contact me container setting width and flex */
 #contactNav {
     display: flex;
@@ -281,10 +280,6 @@ header a:hover {
     .navLinks {
         margin-right: 2rem;
     }
-
-    .hero img {
-        max-width: 17rem;
-    }
 }
 
 @media screen and ( min-width: 768px) {
@@ -307,6 +302,13 @@ header a:hover {
 
     #aboutMeContent {
         width: 80%;
+    }
+
+    #aboutMeContent img {
+        float: left;
+        height: auto;
+        border-radius: 10%;
+       margin: 3rem 1rem 0 4rem;
     }
     
     #aboutMeContent p {
@@ -373,6 +375,10 @@ header a:hover {
         max-width: 20vw; 
         font-size: 3rem;
         margin: 0;
+    }
+
+    #aboutMeContent p {
+        margin: 3rem auto 0 4rem;
     }
 
     #workContent {
