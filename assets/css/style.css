@@ -226,6 +226,7 @@ header a:hover {
 /* setting properties for the tag container */
 .workTag {
     margin: 0;
+    padding: 0.5rem 0.5rem;
     line-height: 1.5rem;
     color: var(--isengard);
     background-color: rgba(146, 204, 206, 0.7);
@@ -236,12 +237,6 @@ header a:hover {
 /* styling for the text in the work tag containers for the smaller cards */
 .workTag h4 {
     margin: 0rem auto;
-    padding: 0.5rem 0.5rem;
-}
-
-/* styling for the text in the work tag containers for the smaller cards */
-.workTag p {
-    padding: 0rem 0.5rem;
 }
 
 /* using a hover property to bring the opacity of the main work card and the samller cards back to 100% with an ease-in-out transition */
@@ -341,14 +336,16 @@ header a:hover {
 
     #contactMeContent {
         width: 80%;
+        display: flex;
     }
 
     #contactNav {
-        align-items: center;
-        margin: 0rem;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+
+    #contactMeContent a { 
+        margin: 2rem;
     }
 }
 
