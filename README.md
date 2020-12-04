@@ -47,15 +47,15 @@ __________________________
 
 ## 📸 <a id="screenshot-of-full-screen"></a> Screenshot of full screen
 
-![full_screen](./assets/css/Images/Portfolio_full_screen.png)
+![full_screen](assets/images/Portfolio_full_screen.png)
 
 ## 📸 <a id="screenshot-of-ipad-screen"></a> Screenshot of iPad screen
 
-![iPad](./assets/css/Images/Portfolio_iPdad.png) 
+![iPad](assets/images/Portfolio_iPdad.png) 
 
 ## 📸 <a id="screenshot-of-iphone"></a> Screenshot of iPhone X
 
-![iPhone](./assets/css/Images/Portfolio_iPhone_X.png) 
+![iPhone](assets/images/Portfolio_iPhone_X.png) 
 
 ## <a id="issues-to-address-in-the-future"></a> 🔍 Issues to Address in the Future
 Utilize **JavaScript** to give my portfolio a truly interactive user experience.
