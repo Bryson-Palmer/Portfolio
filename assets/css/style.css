@@ -108,23 +108,17 @@ header a:hover {
     border-bottom: .2rem solid var(--isengard);
 }
 
-/* colored filter overlay set over the hero image with to a low opacity to make the picture colors more homogenous with color themes */
-.backgroundColor {
-    background-color: var(--aragorn);
-    opacity: 0.15;
-}
-
 /* styling subtitle text with a position of absolute text shadow */
 .hero h4 {
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.5rem;
     right: 1rem;
     text-align: right;
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     text-shadow: 0rem 0rem .9rem var(--mordor);
     color: var(--gandalf);
-    padding: 0rem 1rem 0rem 1rem;
+    padding: 0rem 1rem;
 }
 
 /* main container properties setting size and flex */
@@ -184,7 +178,7 @@ header a:hover {
     width: 100%;
     height: 28rem;
     border: .4rem solid var(--frodo);
-    opacity: 0.5;
+    opacity: 0.7;
     margin-right: auto;
     margin-bottom: 1rem;
     margin-left: auto;
@@ -212,7 +206,7 @@ header a:hover {
 .smallerCards { 
     height: 15.8rem;
     border: .4rem solid var(--frodo);
-    opacity: 0.5;
+    opacity: 0.7;
     margin-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -271,6 +265,12 @@ header a:hover {
     .navLinks {
         display: flex;
         margin-right: 2rem;
+    }
+
+    .hero h4 {
+    bottom: 1rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     }
 }
 
